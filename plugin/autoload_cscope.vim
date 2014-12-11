@@ -195,14 +195,16 @@ nmap fs :cs find s <C-R>=expand("<cword>")<CR><CR>
 "g:查找函数、宏、枚举等定义的位置
 nmap fg :cs find g <C-R>=expand("<cword>")<CR><CR>
 "c:查找光标下的函数被调用的地方
-"nmap fc :cs find c <C-R>=expand("<cword>")<CR><CR>
+nmap fc :cs find c <C-R>=expand("<cword>")<CR><CR>
 ""t: 查找指定的字符串出现的地方
 nmap ft :cs find t <C-R>=expand("<cword>")<CR><CR>
 "e:egrep模式查找,相当于egrep功能
 nmap fe :cs find e <C-R>=expand("<cword>")<CR><CR>
 ""f: 查找文件名,相当于lookupfile
 nmap fn :cs find f <C-R>=expand("<cfile>")<CR><CR>
+""f: 查找文件名,相当于lookupfile
+nmap ff :cs find f <C-R>=expand("<cword>")<CR><CR>
 "i: 查找当前文件名出现过的地方
-"nmap fi :cs find i <C-R>=expand("<cfile>")<CR><CR>
+nmap fi :cs find i <C-R>=expand("<cfile>")<CR><CR>
 ""d: 查找本当前函数调用的函数
 nmap fd :cs find d <C-R>=expand("<cword>")<CR><CR>
