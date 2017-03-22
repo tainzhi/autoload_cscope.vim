@@ -1,4 +1,4 @@
-##introduction
+## introduction
 This is a mirror of http://www.vim.org/scripts/script.php?script_id=157
 
 This plugin will automatically load **cscope.out** databases into vim when you open a C file. (headers included)
@@ -7,7 +7,7 @@ It does a search starting at the directory that the file is in, and checking the
 
 This version also creates some macros and a menu that can be useful.  If you don't like them, you can set g:autocscope_menus to 0 and they won't load.
 
-##my modifies
+## my modifies
 ```
 set nocst    "在cscope数据库添加成功的时候不在命令栏现实提示信息.
 set cspc=6 "cscope的查找结果在格式上最多显示6层目录.
